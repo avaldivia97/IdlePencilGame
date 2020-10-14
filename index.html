@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pencil Maker</title>
+</head>
+<script src="main.js" charset="UTF-8" type="text/javascript"></script>
+<body>
+    <p id="pencilsMade"> 0 Pencils made historically</p>
+    <p id="pencilInventory"> 0 Pencils still in inventory</p>
+    <p id="pencilsSold"> 0 Pencils sold historically</p>
+    <p id="totalCurrency"> 0 Total Currency</p>
+    <button onclick="makePencilOnClick()">Manufacture Pencils</button>
+    <button onclick="sellPencilOnClick()">Sell Pencil</button>
+    <p> Manufacturing Stats</p>
+    <p id="pencilsPerClick"> Making 1 Pencil Per Click </p> 
+    <button onclick="buyPencilsPerClick()" id="perClickUpgrade">Upgrade Click Manufacturing (Currently Level 1) Cost: 10 Currency</button>
+    <p id="pencilsPerSecond"> Making 1 Pencil Per Second</p>
+    <button onclick="buyPencilsAuto()" id="autoUpgrade">Upgrade Auto Manufacturing (Currently Level 1) Cost: 10 Currency</button>
+    <p> Marketing Stats</p>
+    <p id="pencilToCurrency"> Selling 1 Pencil for 1 Currency</p>
+    <button onclick="buyIncreaseCost()" id="increasePrice">Upgrade Sell Price Per Pencil (Currently Level 1) Cost: 10 Currency</button>
+    <p id="pencilPerSellClick"> Selling 1 Pencil Per Click</p>
+    <button onclick="buySellsPerClick()" id="perClickSellUpgrade">Upgrade Click Selling (Currently Level 1) Cost: 10 Currency</button>
+    <p id="sellsPerSecond"> Selling 1 Pencil Per Second</p>
+    <button onclick="buySellsAuto()" id="autoSellUpgrade">Upgrade Auto Selling (Currently Level 1) Cost: 10 Currency</button>
+</body>
+</html>
