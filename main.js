@@ -36,7 +36,7 @@ function makePencilAuto()
 }
 
 function sellPencilOnClick(){
-    if(gameData.pencilInventory > 0){
+    if(gameData.pencilInventory > 0 && gameData.pencilInventory >= gameData.sellRatePerClick){
         gameData.pencilInventory -=gameData.sellRatePerClick
         gameData.pencilsSold +=gameData.sellRatePerClick
         gameData.currency +=(gameData.currencyPerSell * gameData.sellRatePerClick)
@@ -47,7 +47,7 @@ function sellPencilOnClick(){
 }
 
 function sellPencilAuto(){
-    if(gameData.pencilInventory > 0){
+    if(gameData.pencilInventory > 0 && gameData.pencilInventory >= gameData.sellRateAuto){
         gameData.pencilInventory -=gameData.sellRateAuto
         gameData.pencilsSold +=gameData.sellRateAuto
         gameData.currency +=(gameData.currencyPerSell * gameData.sellRateAuto)
